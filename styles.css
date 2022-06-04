@@ -1,0 +1,990 @@
+/*Adding Oxanium Font*/
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&display=swap');
+
+/*Adding Gugi Font*/
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
+/*Variables*/
+:root{
+    --project-bg-dark: #370034;
+    --about-bg-dark: #76006F;
+    --contact-bg-dark: #BD00B2;
+    --project-bg-light: #FFE9FE;
+    --about-bg-light: #FFA6F9;
+    --contact-bg-light: #FF6DF6;
+    --text-color1: #FFE9FE;
+    --text-color2: #FF83F7;
+    --text-color3: #FF00F0;
+    --text-color4: #A5009B;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Background Color Change*/
+body{
+    background-color: black;
+    transition: background-color 0.5s;
+}
+body.changeColor {
+    background-color: var(--project-bg-dark);
+ }
+
+/*Typography*/
+h1{
+    color: white;
+    text-shadow: 0px 0px 7px;
+    font: 119px Gugi, sans-serif;
+}
+h2{
+    color: var(--project-bg-light);
+    padding: 30px;
+    text-shadow: 0px 0px 7px;
+    text-align: center;
+    font: 89.8px Gugi, sans-serif;
+}
+h3{
+    color: var(--project-bg-light);
+    text-shadow: 0px 0px 7px;
+    text-align: center;
+    font: 67.3px Gugi, sans-serif;
+}
+h4{
+    color: var(--project-bg-light);
+    text-shadow: 0px 0px 4px;   
+    font: 50.5px Gugi, sans-serif;
+}
+h5{
+    color: #FFD9FD;
+    font: 37.9px Oxanium, sans-serif;
+}
+h6{
+    color: var(--project-bg-light);
+    font: 28.24px Oxanium, sans-serif;
+    text-shadow: 0px 0px 4px;   
+}
+p{
+    font: 28.24px Oxanium, sans-serif;
+    color: var(--text-color2);
+}
+label{
+    font: 21.3px Oxanium, sans-serif;
+}
+
+
+.navbar{
+    width: 100%;
+    overflow: auto;
+    position: relative;
+    background-color: transparent;
+}
+.nav-container{
+    display: block;
+    margin: auto;
+    width: 100%;
+    position: relative;
+}
+nav li{
+    display: inline;
+}
+.nav-link, .nav-links{
+    color: white;
+    padding: 20px 0;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: Oxanium, sans-serif;
+}
+.nav-link{
+    margin-left: 50px;
+    float: left;
+}
+.nav-links{
+    color: var(--text-color3);
+    float: right;
+    margin-right: 50px;
+}
+
+
+
+.dropdown, .dropbtn{
+    display: none;
+}
+.dropbtn {
+    background: url(/images/Icons/hamburger-menu-pink.png);
+    width: 50px;
+    height: 50px;
+    float: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+    transition: height 0.3s, width 0.3s;
+}
+.dropbtn:hover, .dropbtn:focus {
+    width: 60px;
+    height: 60px;
+}
+.dropbtn:active{
+    width: 40px;
+    height: 40px;
+}
+.dropdown {
+    float: right;
+    position: relative;
+    display: block;
+}
+  
+.dropdown-content {
+    display: none;
+    clear: both;
+    background-color: var(--text-color2);
+    min-width: 300px;
+    overflow: auto;
+    right: 0;
+    z-index: 2;
+    font-family: Oxanium, sans-serif;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+  .dropdown a:hover {background-color: #ddd;}
+  .show {display: block;}
+
+
+
+
+.nav-link:hover, .nav-links:hover{
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+.nav-link:active, .nav-links:active{
+    text-decoration: underline;
+    transform: scale(0.9);
+}
+#intro, #projects, #about-me, #contact{
+    height: 0px;
+}
+.section1, .section3, .section4{
+    height: 100vh;
+    position: relative;   
+}
+
+/*First Section*/
+.section1 .col{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.section1 .col .col1{
+    margin-left: 50px;
+}
+.section1 img{
+    height: 400px;
+    width: 400px;
+}
+
+
+/*Project Section*/
+.section2{
+    height: 180vh;
+}
+.second-col1, .col11, .col12{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.section2 label{
+    display: block;
+    text-align: center;
+}
+.project{
+    display: flex;
+    margin: 20px 20px 10px 0px;
+    width: 100%;
+}
+.project-link{
+    position: relative;
+    height: 280px;
+    width: 590px;
+    margin: 20px 50px 40px 50px;
+    background-color: rgba(255, 166, 349, 0.5);
+    border-radius: 20px;
+    text-decoration: none;
+    align-items: center;
+    transition: width 0.5s, height 0.5s;
+} 
+.project-link h4{
+    transition: width 0.5s, height 0.5s;
+}
+.project-link .project-image img{
+    width: 200px;
+    height: 200px;
+    margin-left: 20px;
+}
+/*Hover Over Project*/
+.project-link:hover{
+    border: solid 3px var(--project-bg-light);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 600px;
+    height: 300px;
+}
+.project-link:hover h4{
+    color: var(--project-bg-dark);
+    text-shadow: 0px 0px 5px;
+}
+.project-link:hover .project-image{
+    margin-bottom: 10px;
+}
+.project-link:hover .project-type{
+    font-size: 20px;
+    color: var(--project-bg-dark);
+    padding: 5px;
+    border: solid 2px white;
+}
+/*Click Project*/
+.project-link:active{
+    border: solid 3px var(--project-bg-light);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 550px;
+    height: 270px;
+    position: relative;
+}
+.project-link:active h4{
+    font-size: 40px;
+    color: var(--project-bg-dark);
+    text-shadow: 0px 0px 5px;
+}
+.project-link:active .project-image img{
+    width: 170px;
+    height: 170px;
+}
+.project-link:active .project-type{
+    color: var(--project-bg-dark);
+    font-size: 10px;
+    padding: 5px;
+    border: solid 2px white;
+}
+.project-image{
+    transition: margin 0.5s;
+}
+.project-link:active .project-image img{
+    transition: width 0.5s, height 0.5s;
+}
+.project-title{
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+}
+.project-type{
+    color: white;
+    padding: 5px;
+    margin: 10px;
+    border: solid 1px var(--about-bg-light);
+    transition: width 0.5s, height 0.5s;
+}
+
+
+/*About Section*/
+.section3 img{
+    width: 300px;
+    height: auto;
+}
+.col2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 50px;
+}
+.col22{
+    margin: 30px;
+}
+.resume-link{
+    color: white;
+    text-decoration: none;
+    transition: font-size 0.5s;
+}
+.resume-link:hover{
+    font-size: 32px;
+    text-decoration: underline;
+}
+.resume-link:active{
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+
+/*Contact Section*/
+.contact-message{
+    font-weight: 600;
+    text-align: center;
+}
+.col3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60%;
+}
+.contact-icon{
+    background: url(/images/Icons/email-logo-white.png);
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+.contact-icon2{
+    background: url(/images/Icons/linkedin-logo-white.png);
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+.contact-icon3{
+    background: url(/images/Icons/dribbble-logo-white.png);
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+.contact-icon4{
+    background: url(/images/Icons/github-logo-white.png);
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+.contact-icon, .contact-icon2, .contact-icon3, .contact-icon4{
+    width: 200px;
+    height: 200px;
+    transition: width 0.5s, height 0.5s;
+}
+.contact-icon:hover, .contact-icon2:hover, .contact-icon3:hover, .contact-icon4:hover{
+    width: 300px;
+    height: 300px;
+}
+.contact-icon:hover, .contact-icon:active{
+    background: url(/images/Icons/email-logo-white-border.png);
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+.contact-icon2:hover, .contact-icon2:active{
+    background: url(/images/Icons/linkedin-logo-white-border.png);
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+.contact-icon3:hover, .contact-icon3:active{
+    background: url(/images/Icons/dribbble-logo-white-border.png);
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+.contact-icon4:hover, .contact-icon4:active{
+    background: url(/images/Icons/github-logo-white-border.png);
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+
+.contact-icon:active, .contact-icon2:active, .contact-icon3:active, .contact-icon4:active{
+    width: 150px;
+    height: 150px;
+}
+
+
+@media (max-width: 1279px) and (min-width: 992px){
+    h1{
+        font: 89.8px Gugi, sans-serif;
+    }
+    h2{
+        padding: 30px;
+        text-align: center;
+        font: 67.3px Gugi, sans-serif;
+    }
+    h3{
+        font: 50.9px Gugi, sans-serif;
+    }
+    h4{
+        font: 37.9px Gugi, sans-serif;
+    }
+    h5{
+        font: 28.24 Oxanium, sans-serif;
+    }
+    h6{
+        font: 21.3px Oxanium, sans-serif;
+    }
+    p{
+        font: 21.3px Oxanium, sans-serif;
+    }
+    label{
+        font: 16px Oxanium, sans-serif;
+    }
+    .section1 img{
+        height: 350px;
+        width: 350px;
+    }
+    .section2{
+        height: 155vh;
+    }
+    .section4{
+        height: 100vh;
+    }
+    .project{
+        margin: 20px 20px 10px 0px;
+    }
+    .project-link{
+        height: 250px;
+        width: 400px;
+        margin: 15px 35px 45px 35px;
+        transition: width 0.5s, height 0.5s;
+    } 
+    .project-link h4{
+        font-size: 30px;
+        transition: width 0.5s, height 0.5s;
+    }
+    .project-link .project-image img{
+        width: 170px;
+        height: 170px;
+        margin-left: 20px;
+    }
+    /*Hover Over Project*/
+    .project-link:hover{
+        width: 450px;
+        height: 280px;
+    }
+    .project-link:hover h4{
+        text-shadow: 0px 0px 5px;
+    }
+    .project-link:hover .project-image{
+        margin-bottom: 20px;
+    }
+    .project-link:hover .project-type{
+        font-size: 16px;
+        padding: 5px;
+        border: solid 2px white;
+    }
+    /*Click Project*/
+    .project-link:active{
+        border: solid 3px var(--project-bg-light);
+        width: 550px;
+        height: 270px;
+    }
+    .project-link:active h4{
+        font-size: 40px;
+    }
+    .project-link:active .project-image img{
+        width: 170px;
+        height: 170px;
+    }
+    .project-link:active .project-type{
+        color: var(--project-bg-dark);
+        font-size: 10px;
+        padding: 5px;
+        border: solid 2px white;
+    }
+    .resume-link:hover{
+        font-size: 32px;
+        text-decoration: underline;
+    }
+    .resume-link:active{
+        font-size: 20px;
+        text-decoration: underline;
+    }
+    .col3{
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+    }
+    .contact-icon, .contact-icon2, .contact-icon3, .contact-icon4{
+        width: 170px;
+        height: 170px;
+        margin: 60px;
+        transition: width 0.5s, height 0.5s;
+    }
+    .contact-icon:hover, .contact-icon2:hover, .contact-icon3:hover, .contact-icon4:hover{
+        width: 220px;
+        height: 220px;
+    }
+    .contact-icon:active, .contact-icon2:active, .contact-icon3:active, .contact-icon4:active{
+        width: 125px;
+        height: 125px;
+    }
+}
+
+
+
+
+
+@media (max-width: 991px) and (min-width: 920px){
+    h1{
+        font: 89.8px Gugi, sans-serif;
+    }
+    h2{
+        padding: 30px;
+        text-align: center;
+        font: 67.3px Gugi, sans-serif;
+    }
+    h3{
+        font: 50.9px Gugi, sans-serif;
+    }
+    h4{
+        font: 28.24px Gugi, sans-serif;
+    }
+    h5{
+        font: 28.24 Oxanium, sans-serif;
+    }
+    h6{
+        font: 16px Oxanium, sans-serif;
+    }
+    p{
+        font: 21.3px Oxanium, sans-serif;
+    }
+    label{
+        font: 12px Oxanium, sans-serif;
+    }
+    .section1 img{
+        height: 300px;
+        width: 300px;
+    }
+    .section2{
+        height: 150vh;
+    }
+    .section4{
+        height: 100vh;
+    }
+    .project{
+        margin: 20px 20px 10px 0px;
+    }
+    .project-link{
+        height: 250px;
+        width: 400px;
+        margin: 15px 35px 45px 35px;
+        background-color: rgba(255, 166, 349, 0.5);
+        transition: width 0.5s, height 0.5s;
+    } 
+    .project-link h4{
+        font-size: 30px;
+        transition: width 0.5s, height 0.5s;
+    }
+    .project-link .project-image img{
+        width: 170px;
+        height: 170px;
+        margin-left: 20px;
+    }
+    /*Hover Over Project*/
+    .project-link:hover{
+        width: 450px;
+        height: 280px;
+    }
+    .project-link:hover h4{
+        text-shadow: 0px 0px 5px;
+    }
+    .project-link:hover .project-image{
+        margin-bottom: 20px;
+    }
+    .project-link:hover .project-type{
+        font-size: 16px;
+        padding: 5px;
+        border: solid 2px white;
+    }
+    /*Click Project*/
+    .project-link:active{
+        border: solid 3px var(--project-bg-light);
+        width: 550px;
+        height: 270px;
+    }
+    .project-link:active h4{
+        font-size: 40px;
+    }
+    .project-link:active .project-image img{
+        width: 170px;
+        height: 170px;
+    }
+    .project-link:active .project-type{
+        color: var(--project-bg-dark);
+        font-size: 10px;
+        padding: 5px;
+        border: solid 2px white;
+    }
+    .contact-message{
+        font-weight: 600;
+        text-align: center;
+    }
+    .resume-link:hover{
+        font-size: 32px;
+        text-decoration: underline;
+    }
+    .resume-link:active{
+        font-size: 20px;
+        text-decoration: underline;
+    }
+    .col3{
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+    }
+    .contact-icon, .contact-icon2, .contact-icon3, .contact-icon4{
+        width: 170px;
+        height: 170;
+        margin: 40px;
+        transition: width 0.5s, height 0.5s;
+    }
+    .contact-icon:hover, .contact-icon2:hover, .contact-icon3:hover, .contact-icon4:hover{
+        width: 250px;
+        height: 250px;
+    }
+    .contact-icon:active, .contact-icon2:active, .contact-icon3:active, .contact-icon4:active{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+@media (max-width: 919px) and (min-width: 767px){
+    h1{
+        font: 67.3px Gugi, sans-serif;
+    }
+    h2{
+        padding: 20px;
+        text-align: center;
+        font: 55px Gugi, sans-serif;
+    }
+    h3{
+        font: 50.9px Gugi, sans-serif;
+    }
+    h4{
+        font: 28.24px Gugi, sans-serif;
+    }
+    h5{
+        font: 21px Oxanium, sans-serif;
+    }
+    h6{
+        font: 16px Oxanium, sans-serif;
+    }
+    p{
+        font: 21.3px Oxanium, sans-serif;
+    }
+    label{
+        font: 12px Oxanium, sans-serif;
+    }
+    .section1 img{
+        height: 275px;
+        width: 275px;
+    }
+    .section2{
+        height: 230vh;
+    }
+    .section3{
+        height: 115vh;
+    }
+    .section4{
+        height: 100vh;
+    }
+    .second-col1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .project{
+        margin: 20px 20px 20px 0px;
+    }
+    .project-link{
+        height: 250px;
+        width: 500px;
+        margin: 15px 35px 45px 35px;
+        background-color: rgba(255, 166, 349, 0.5);
+        transition: width 0.5s, height 0.5s;
+    } 
+    .project-link h4{
+        font-size: 30px;
+        transition: width 0.5s, height 0.5s;
+    }
+    .project-link .project-type{
+        font-size: 20px;
+        padding: 5px;
+        border: solid 2px white;
+    }
+    .project-link .project-image img{
+        width: 150px;
+        height: 150px;
+        margin-left: 20px;
+    }
+    /*Hover Over Project*/
+    .project-link:hover{
+        height: 280px;
+        width: 550px;
+    }
+    .project-link:hover h4{
+        text-shadow: 0px 0px 5px;
+    }
+    .project-link:hover .project-image{
+        margin-bottom: 20px;
+    }
+    .project-link:hover .project-type{
+        font-size: 16px;
+        padding: 5px;
+        border: solid 2px white;
+    }
+    /*Click Project*/
+    .project-link:active{
+        border: solid 3px var(--project-bg-light);
+        width: 550px;
+        height: 270px;
+    }
+    .project-link:active h4{
+        font-size: 40px;
+    }
+    .project-link:active .project-image img{
+        width: 170px;
+        height: 170px;
+    }
+    .project-link:active .project-type{
+        color: var(--project-bg-dark);
+        font-size: 10px;
+        padding: 5px;
+        border: solid 2px white;
+    }
+    .contact-message{
+        font-weight: 600;
+        text-align: center;
+    }
+    .col2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .col21 img{
+        width: 220px;
+        height: auto;
+    }
+    .resume-link:hover{
+        font-size: 25px;
+        text-decoration: underline;
+    }
+    .resume-link:active{
+        font-size: 16px;
+        text-decoration: underline;
+    }
+    .col3{
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+    }
+    .contact-icon, .contact-icon2, .contact-icon3, .contact-icon4{
+        width: 170px;
+        height: 170;
+        margin: 40px;
+        transition: width 0.5s, height 0.5s;
+    }
+    .contact-icon:hover, .contact-icon2:hover, .contact-icon3:hover, .contact-icon4:hover{
+        width: 250px;
+        height: 250px;
+    }
+    .contact-icon:active, .contact-icon2:active, .contact-icon3:active, .contact-icon4:active{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+
+@media (max-width: 767px){
+    .nav-link{
+        margin-left: 0px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .dropdown, .dropbtn{
+        display: block;
+    }
+    h1{
+        font: 67.3px Gugi, sans-serif;
+    }
+    h2{
+        padding: 20px;
+        text-align: center;
+        font: 50.9px Gugi, sans-serif;
+    }
+    h3{
+        font: 40px Gugi, sans-serif;
+    }
+    h4{
+        font: 21px Gugi, sans-serif;
+    }
+    h5{
+        font: 21px Oxanium, sans-serif;
+    }
+    h6{
+        font: 16px Oxanium, sans-serif;
+    }
+    p{
+        font: 16px Oxanium, sans-serif;
+    }
+    label{
+        font: 12px Oxanium, sans-serif;
+    }
+    .col{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .section1 .col .col1{
+        margin: 0px 20px;
+    }
+    .section1 img{
+        height: 270px;
+        width: 270px;
+    }
+    .section1 .col{
+        height: 80%;
+        width: 100%;
+
+    }
+    .section2{
+        height: 230vh;
+    }
+    .section3{
+        height: 115vh;
+    }
+    .section4{
+        height: 100vh;
+    }
+    .second-col1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .project{
+        margin: 20px 20px 20px 0px;
+    }
+    .project-link{
+        height: 250px;
+        width: 500px;
+        margin: 15px 35px 45px 35px;
+        background-color: rgba(255, 166, 349, 0.5);
+        transition: width 0.5s, height 0.5s;
+    } 
+    .project-link h4{
+        font-size: 30px;
+        transition: width 0.5s, height 0.5s;
+    }
+    .project-link .project-type{
+        font-size: 20px;
+        padding: 5px;
+        border: solid 2px white;
+    }
+    .project-link .project-image img{
+        width: 150px;
+        height: 150px;
+        margin-left: 20px;
+    }
+    /*Hover Over Project*/
+    .project-link:hover{
+        height: 280px;
+        width: 550px;
+    }
+    .project-link:hover h4{
+        text-shadow: 0px 0px 5px;
+    }
+    .project-link:hover .project-image{
+        margin-bottom: 20px;
+    }
+    .project-link:hover .project-type{
+        font-size: 16px;
+        padding: 5px;
+        border: solid 2px white;
+    }
+    /*Click Project*/
+    .project-link:active{
+        border: solid 3px var(--project-bg-light);
+        width: 550px;
+        height: 270px;
+    }
+    .project-link:active h4{
+        font-size: 40px;
+    }
+    .project-link:active .project-image img{
+        width: 170px;
+        height: 170px;
+    }
+    .project-link:active .project-type{
+        color: var(--project-bg-dark);
+        font-size: 10px;
+        padding: 5px;
+        border: solid 2px white;
+    }
+    .contact-message{
+        font-weight: 600;
+        text-align: center;
+    }
+    .col2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0px 10px;
+    }
+    .col21 img{
+        width: 220px;
+        height: auto;
+    }
+    .resume-link:hover{
+        font-size: 25px;
+        text-decoration: underline;
+    }
+    .resume-link:active{
+        font-size: 16px;
+        text-decoration: underline;
+    }
+    .col3{
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+    .contact-icon, .contact-icon2, .contact-icon3, .contact-icon4{
+        width: 125px;
+        height: 125;
+        margin: 40px;
+        transition: width 0.5s, height 0.5s;
+    }
+    .contact-icon:hover, .contact-icon2:hover, .contact-icon3:hover, .contact-icon4:hover{
+        width: 175px;
+        height: 175px;
+    }
+    .contact-icon:active, .contact-icon2:active, .contact-icon3:active, .contact-icon4:active{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/*Media Query*/
+/*
+@media (min-width : ---px){
+    h1{
+
+    }
+}
+@media (max-width: 919px) and (min-width: 767px)
+@media (max-width: 768px) and (min-width: 479px)
+@media (max-width: 478px)
+
+@media (max-width: 767px)
+919-767
+991 and down
+767 and down
+Smallest Screen: 478 and down
+*/
